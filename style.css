@@ -1,0 +1,64 @@
+body{
+    font-family: 'inter';
+}
+body section, body header, article{
+    padding: 30px 30px;
+}
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-right {
+  align-items: center;
+  display: flex;
+  
+}
+
+.navigation .tab {
+  color: #555555;
+  display: none;
+  padding: 0.5rem 1rem;
+  text-decoration: none; 
+}
+.navigation .tab:nth-child(4){
+    color: #FF3998
+}
+@media only screen and (min-width: 768px){
+    .navigation .tab{
+        display: inline-block;
+    }
+}
+@media only screen and (min-width: 768px){
+    .menu{
+        display: none;
+    }
+}
+section.hero{
+    position: relative;
+}
+.lsoon{
+    color: #FF3998;
+}
+.dark2{
+    color: #555555;
+    
+}
+img.herosvg{
+    padding: 0;
+    position: absolute;
+    right: 8px;
+    top: 3px;
+    width: 270px;
+    
+}
+.signup{
+    background-color: white;
+    border: 3px solid #FF3939;
+    border-radius: 25px;
+    padding: 0.6rem 1.7rem;
+}
+article{
+    background-image: url(background1.svg);
+}
