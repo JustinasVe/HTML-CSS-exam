@@ -1,9 +1,11 @@
 body{
     font-family: 'inter';
+
 }
 body section, body header, article{
     padding: 30px 30px;
 }
+
 header {
   align-items: center;
   display: flex;
@@ -13,7 +15,6 @@ header {
 .header-right {
   align-items: center;
   display: flex;
-  
 }
 
 .navigation .tab {
@@ -22,43 +23,75 @@ header {
   padding: 0.5rem 1rem;
   text-decoration: none; 
 }
+
 .navigation .tab:nth-child(4){
     color: #FF3998
 }
+
 @media only screen and (min-width: 768px){
     .navigation .tab{
         display: inline-block;
     }
 }
+
 @media only screen and (min-width: 768px){
     .menu{
         display: none;
     }
 }
+
 section.hero{
+    overflow: hidden;
     position: relative;
 }
-.lsoon{
+
+p.lsoon{
     color: #FF3998;
 }
-.dark2{
+
+p.dark2{
     color: #555555;
-    
+    position: sticky;
+    width: 330px;
 }
+
 img.herosvg{
-    padding: 0;
+    bottom: 10px;
+    left: 290px;
     position: absolute;
-    right: 8px;
-    top: 3px;
     width: 270px;
-    
 }
+
 .signup{
     background-color: white;
-    border: 3px solid #FF3939;
+    border: 3px solid;
+    border-bottom-color: #FF8139;
+    border-left-color: #FF3998;
+    border-right-color: #D6B85A;
+    border-top-color: #FF3939;
     border-radius: 25px;
     padding: 0.6rem 1.7rem;
 }
+
 article{
     background-image: url(background1.svg);
 }
+
+section.companies{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+section.companies img{
+    align-self: center;
+    height: auto;
+    justify-self: center;
+    width: 80%;
+}
+
+section.companies img.companieslogo:nth-child(4){
+    display: none;
+}
+
