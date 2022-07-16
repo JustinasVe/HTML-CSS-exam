@@ -51,6 +51,22 @@ p.lsoon{
     color: #FF3998;
 }
 
+h1{
+    display: none;
+}
+
+@media only screen and (min-width: 768px){
+    h1{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .hhero{
+        display: none;
+    }
+}
+
 p.dark2{
     color: #555555;
     position: sticky;
@@ -62,6 +78,14 @@ img.herosvg{
     left: 290px;
     position: absolute;
     width: 270px;
+}
+
+@media only screen and (min-width: 768px){
+    img.herosvg{
+        left: 550px;
+        top: -30px;
+        width: 380px;
+    }
 }
 
 .signup{
@@ -79,6 +103,16 @@ article{
     background-image: url(background1.svg);
 }
 
+@media only screen and (min-width: 768px){
+    article{
+        background-image: url(background.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: auto;
+        margin: 30px;
+    }
+}
+
 section.companies{
     display: grid;
     gap: 20px;
@@ -90,11 +124,30 @@ section.companies img{
     align-self: center;
     height: auto;
     justify-self: center;
-    width: 80%;
+    width: 60%;
 }
 
 section.companies img.companieslogo:nth-child(4){
     display: none;
+}
+
+@media only screen and (min-width: 768px){
+    section.companies img.companieslogo:nth-child(4){
+        display: inline;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    section.companies{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    section.companies img{
+        width:auto;
+    }
 }
 
 .opensea{
@@ -113,6 +166,22 @@ section.companies img.companieslogo:nth-child(4){
     display: flex;
     flex-flow: row wrap;
     width: 250px;
+}
+
+.nft{
+    width: 250px;
+}
+
+@media only screen and (min-width: 768px){
+    .cards{
+        overflow: unset;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .container, .nft{
+        width: 100%;
+    }
 }
 
 .box{
@@ -171,6 +240,18 @@ p.green2{
     width: 240px;
 }
 
+@media only screen and (min-width: 768px){
+    p.green2{
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    img.greensvg{
+        left: 650px
+    }
+}
+
 footer img.twitter{
     padding: 0 10px;
 }
@@ -183,6 +264,34 @@ footer img.insta{
     display: grid;
     grid-template-columns: repeat(2, 120px);
     grid-template-rows: repeat(2, 140px);
+}
+
+@media only screen and (min-width: 768px){
+    .footerlist{
+        display: flex;
+        flex-direction: row;
+        justify-content:right;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    ul{
+        min-width: 12%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .flogos{
+        position: absolute;
+        bottom: 125px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    footer{
+        position: relative;
+    }
 }
 
 ul{
@@ -200,6 +309,23 @@ ul{
     padding-bottom: 10px;
 }
 
-.copyright{
+.copyright, .hide{
     color: #999999;
+}
+
+.hide{
+    display: none;
+}
+
+@media only screen and (min-width: 768px){
+    .hide{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .between{
+        display: flex;
+        justify-content: space-between;
+    }
 }
