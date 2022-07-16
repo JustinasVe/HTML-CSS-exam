@@ -1,9 +1,10 @@
 body{
     font-family: 'inter';
-
+    padding: 0;
 }
-body section, body header, article{
-    padding: 30px 30px;
+
+body section, body header, article, footer{
+    padding: 30px;
 }
 
 header {
@@ -21,7 +22,7 @@ header {
   color: #555555;
   display: none;
   padding: 0.5rem 1rem;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .navigation .tab:nth-child(4){
@@ -42,6 +43,7 @@ header {
 
 section.hero{
     overflow: hidden;
+    padding-bottom: 70px;
     position: relative;
 }
 
@@ -95,3 +97,109 @@ section.companies img.companieslogo:nth-child(4){
     display: none;
 }
 
+.opensea{
+    color: #555555;
+}
+
+.cards{
+    display: flex;
+    gap: 30px;
+    overflow: auto;
+}
+
+.container{
+    background-color: #EEEEEE;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 250px;
+}
+
+.box{
+    flex: 40%;
+    text-align: center;
+}
+
+.gloop{
+    color: #FF8139;
+    font-size: 11px;
+}
+
+.topbid{
+    color: #555555;
+    font-size: 11px;
+}
+
+.opensear, .openseal{
+    color: #555555;
+}
+
+.gloop, .h4left, .openseal{
+    padding-left: 20px;
+    text-align: start;
+}
+
+.topbid, .h4right, .opensear{
+    padding-right: 20px;
+    text-align: end;
+}
+
+.h4left, .h4right{
+    margin: auto
+}
+
+hr.hr1{
+    border-top: 2px solid #EEEEEE;
+    margin: 40px 0;
+}
+
+hr.hr2{
+    border-top: 2px solid #EEEEEE;
+    margin: 0;
+}
+
+img.greensvg{
+    left: 310px;
+    position: absolute;
+    top: 4px;
+    width: 140px;
+}
+
+p.green2{
+    color: #555555;
+    position: sticky;
+    width: 240px;
+}
+
+footer img.twitter{
+    padding: 0 10px;
+}
+
+footer img.insta{
+    padding-right: 10px;
+}
+
+.footerlist{
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(2, 140px);
+}
+
+ul{
+    color: #555555;
+    list-style-type: none;
+    padding:  0;
+}
+
+.lititle{
+    font-weight: 550;
+    padding: 20px 0;
+}
+
+.list{
+    padding-bottom: 10px;
+}
+
+.copyright{
+    color: #999999;
+}
